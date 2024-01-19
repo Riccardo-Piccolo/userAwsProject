@@ -29,15 +29,15 @@ Per effettuare le richieste in modo corretto, utilizzare un software che permett
 # Esempio di inserimento utente
 
 1. Aprire Postman. In caso esso non sia installato, andare sulla [pagina di installazione](https://www.postman.com/downloads/)
-2. Aprire una nuova richiesta premendo il pulsante + indicato dalla freccia ![Immagine Postman 1](/assets/images/immagine-postman-1.jpg)
-3. Selezionare il metodo POST dal menu a tendina indicato dalla freccia ![Immagine Postman 2](/assets/images/immagine-postman-2.jpg)
+2. Aprire una nuova richiesta premendo il pulsante + indicato dalla freccia ![Immagine Postman 1](/assets/images/immagine-postman-1.JPG)
+3. Selezionare il metodo POST dal menu a tendina indicato dalla freccia ![Immagine Postman 2](/assets/images/immagine-postman-2.JPG)
 4. Inserire il link della richiesta nella barra accanto al menu a tendina.
 5. Spostarsi sulla scheda _Body_.
 6. Selezionare l'opzione _raw_.
-7. Inserire i campi specificati nel paragrafo [_createUser_](#createUser), come in questo esempio ![Immagine Postman 3](/assets/images/immagine-postman-3.jpg)
+7. Inserire i campi specificati nel paragrafo [_createUser_](#createUser), come in questo esempio ![Immagine Postman 3](/assets/images/immagine-postman-3.JPG)
 8. Premere il pulsante _Send_.
 9. Attendere il risultato nella console a fondo pagina.
-10. In caso di successo, il risultato è simile a questo ![Immagine Postman 4](/assets/images/immagine-postman-4.jpg)
+10. In caso di successo, il risultato è simile a questo ![Immagine Postman 4](/assets/images/immagine-postman-4.JPG)
 
 # Esempio di ricerca utente
 1. Seguire i primi 2 passi della lista precedente.
@@ -45,5 +45,5 @@ Per effettuare le richieste in modo corretto, utilizzare un software che permett
 3. Dopo aver inserito il link nella barra, inserire al posto di _{userId}_ l'id numerico scelto (esempio: 1).
 4. Premere il pulsante _Send_.
 5. Attendere il risultato nella console a fondo pagina.
-6. In caso di successo, il risultato è simile a questo ![Immagine Postman 5](/assets/images/immagine-postman-5.jpg)
-7. In caso di insuccesso, il risultato è simile a questo ![Immagine Postman 6](/assets/images/immagine-postman-6.jpg)
+6. In caso di successo, il risultato è simile a questo ![Immagine Postman 5](/assets/images/immagine-postman-5.JPG)
+7. In caso di insuccesso, il risultato è simile a questo ![Immagine Postman 6](/assets/images/immagine-postman-6.JPG)
