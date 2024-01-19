@@ -1,0 +1,42 @@
+service: userawsproject
+
+provider:
+    name: aws
+    runtime: java21
+    stage: dev
+    region: eu-central-1
+    profile: deploy
+    
+
+package:
+    artifact: target/userawsproject.jar
+
+functions:
+    createUser:
+        handler: com.serverless.handlers.CreateUserHandler
+        events:
+            - http:
+                  path: createUser
+                  method: put
+    getUserById:
+        handler: com.serverless.handlers.GetUserByIdHandler
+        events:
+            - http:
+                  path: getUserById/{id}
+                  method: get
+
+resources:
+    Resources:
+        UsersTable:
+            Type: AWS::DynamoDB::Table
+            Properties:
+                TableName: users
+                AttributeDefinitions:
+                    - AttributeName: id
+                      AttributeType: N
+                KeySchema:
+                    - AttributeName: id
+                      KeyType: HASH
+                ProvisionedThroughput:
+                    ReadCapacityUnits: 500
+                    WriteCapacityUnits: 500
